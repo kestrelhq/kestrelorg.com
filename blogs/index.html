@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Kestrel</title>
+<meta name="description" content="How engineering teams from seed to Series B find the right hire: process, evidence, and what we learn building Kestrel.">
+<link rel="canonical" href="https://kestrelorg.com/blogs/">
+<meta property="og:title" content="Blog">
+<meta property="og:description" content="How engineering teams from seed to Series B find the right hire: process, evidence, and what we learn building Kestrel.">
+<meta property="og:url" content="https://kestrelorg.com/blogs/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+.nl{color:#33403c}.nl:hover{color:#0b1210}
+.cta:hover{background:#1fbf9f}
+.row{display:grid;grid-template-columns:56px minmax(0,1fr) 168px 88px;column-gap:24px;align-items:baseline;padding:28px 16px;margin:0 -16px;border-top:1px solid #e3e8e6;color:#0b1210}
+.row:hover{background:#f3f6f5}
+.row:hover .rt{color:#0b7a66}
+.hd{display:grid;grid-template-columns:56px minmax(0,1fr) 168px 88px;column-gap:24px;padding:0 16px 12px;margin:0 -16px}
+a:focus-visible,button:focus-visible,input:focus-visible,.row:focus-visible{outline:2px solid #0b7a66;outline-offset:2px}
+.fl a:hover{color:#0b1210;text-decoration:underline}
+@media (max-width:820px){
+ .row{grid-template-columns:44px minmax(0,1fr);row-gap:6px}
+ .row .m{grid-column:2}
+ .hd{display:none}
+ .navlinks{display:none !important}
+}
+</style>
+</head>
+<body>
+<div style="min-height:100vh;background:#ffffff;color:#0b1210;font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.5">
+
+<!-- NAV -->
+<header style="background:#ffffff;border-bottom:1px solid #e3e8e6">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="/" aria-label="Kestrel home" style="display:inline-flex;align-items:center;gap:12px;font-size:20px;font-weight:600;letter-spacing:-0.01em;color:#0b1210">
+<img src="/logo.png" alt="" width="32" height="32" style="display:block;width:32px;height:32px;border-radius:8px">Kestrel</a>
+<nav class="navlinks" aria-label="Primary" style="display:flex;gap:32px;font-size:15px">
+<a class="nl" href="/#how-it-works">Workflow</a>
+<a class="nl" href="/#pricing">Pricing</a>
+<a class="nl" href="/#who-its-for">Who’s it for</a>
+<a class="nl" href="/#faq">FAQ</a>
+</nav>
+<a class="cta" href="https://cal.com/nithin-s-ctcmul/15min" style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;background:#2ad1b0;color:#04201b;border-radius:999px;font-size:14px;font-weight:600">Book a demo →</a>
+</div>
+</header>
+
+<main style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px)">
+
+<!-- HEADER -->
+<section style="padding:80px 0 56px;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px">
+<div style="flex:1 1 560px;min-width:0">
+<span style="display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid #b6e8dd;border-radius:999px;background:#eefaf7;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;color:#0b7a66"><span aria-hidden="true" style="width:6px;height:6px;border-radius:50%;background:#2ad1b0"></span>BLOG</span>
+<h1 style="margin:24px 0 0;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(48px,8vw,108px);line-height:0.98;letter-spacing:-0.01em;text-wrap:balance">Notes on hiring, <span style="color:#0b7a66">precisely.</span></h1>
+</div>
+<p style="flex:0 1 380px;margin:0;font-size:18px;line-height:1.6;color:#4a5551;text-wrap:pretty">How engineering teams from seed to Series B find the right hire: process, evidence, and what we learn building Kestrel.</p>
+</section>
+
+<!-- FILTER -->
+<div role="group" aria-label="Filter by topic" style="display:flex;flex-wrap:wrap;gap:8px 28px;border-bottom:1px solid #e3e8e6">
+<button type="button" data-cat="All" aria-pressed="true" style="min-height:48px;padding:0;background:transparent;border:0;border-bottom:2px solid #0b7a66;margin-bottom:-1px;font-size:14px;font-weight:600;color:#0b1210;cursor:pointer">All</button>
+<button type="button" data-cat="AI interviews" aria-pressed="false" style="min-height:48px;padding:0;background:transparent;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;font-size:14px;font-weight:500;color:#4a5551;cursor:pointer">AI interviews</button>
+<button type="button" data-cat="Assessments" aria-pressed="false" style="min-height:48px;padding:0;background:transparent;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;font-size:14px;font-weight:500;color:#4a5551;cursor:pointer">Assessments</button>
+<button type="button" data-cat="Hiring playbook" aria-pressed="false" style="min-height:48px;padding:0;background:transparent;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;font-size:14px;font-weight:500;color:#4a5551;cursor:pointer">Hiring playbook</button>
+<button type="button" data-cat="Resume screening" aria-pressed="false" style="min-height:48px;padding:0;background:transparent;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;font-size:14px;font-weight:500;color:#4a5551;cursor:pointer">Resume screening</button>
+
+</div>
+
+<!-- FEATURED -->
+<section aria-label="Featured article" style="padding:48px 0 64px">
+<a id="feat" href="/blogs/ai-interview-platform-india/" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(24px,4vw,56px);align-items:stretch;color:#0b1210">
+<div aria-hidden="true" style="background:#2ad1b0;border-radius:16px;min-height:400px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:32px">
+<div style="display:flex;justify-content:space-between;gap:16px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;color:#04201b">
+<span>NO. <span data-f="num">01</span></span>
+<span><span data-f="catUpper">AI INTERVIEWS</span></span>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;align-items:center;gap:16px"><span style="flex:0 0 84px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#04201b">Source</span><div style="width:100%;height:28px;background:#6fe3cb;border-radius:4px"></div></div>
+<div style="display:flex;align-items:center;gap:16px"><span style="flex:0 0 84px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#04201b">Screen</span><div style="width:64%;height:28px;background:#14a58a;border-radius:4px"></div></div>
+<div style="display:flex;align-items:center;gap:16px"><span style="flex:0 0 84px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#04201b">Interview</span><div style="width:34%;height:28px;background:#0a6b5a;border-radius:4px"></div></div>
+<div style="display:flex;align-items:center;gap:16px"><span style="flex:0 0 84px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#04201b">Decide</span><div style="width:12%;height:28px;background:#04201b;border-radius:4px"></div></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;justify-content:center;gap:20px;min-width:0">
+<p style="margin:0;font-size:12px;letter-spacing:0.08em;color:#0b7a66;font-family:'JetBrains Mono',ui-monospace,monospace"><span data-f="catUpper">AI INTERVIEWS</span> · <span data-f="read">11 min</span> READ</p>
+<h2 style="margin:0;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(32px,4vw,52px);line-height:1.06;letter-spacing:-0.005em;text-wrap:balance"><span data-f="title">How to Evaluate an AI Interview Platform in India: A Buyer’s Checklist</span></h2>
+<p style="margin:0;font-size:18px;line-height:1.6;color:#4a5551;max-width:54ch;text-wrap:pretty"><span data-f="dek">Most teams shortlist on languages, price and demo polish. None of those says whether the scores are trustworthy. Eight questions, a weighted scorecard and a two week pilot.</span></p>
+<span style="font-size:15px;font-weight:600;color:#0b7a66">Read article →</span>
+</div>
+</a>
+</section>
+
+<!-- LEDGER -->
+<section aria-label="More articles" style="padding-bottom:88px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:20px">
+<h2 style="margin:0;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:32px;letter-spacing:0">More articles</h2>
+<span style="font-size:13px;color:#5b6763"><span id="restLabel">4 articles</span></span>
+</div>
+<div class="hd" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.08em;color:#5b6763">
+<span>NO.</span><span>TITLE</span><span>TOPIC</span><span>READ</span>
+</div>
+<div>
+<div id="rows"><a class="row" href="/blogs/hackerrank-alternatives/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">02</span>
+<span style="min-width:0">
+<span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">HackerRank Alternatives for Indian Startups: How to Choose a Coding Assessment Tool</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch;text-wrap:pretty">Start with the job you need the tool to do, compare five types of alternative, then settle it with a weighted scorecard and a one role bake off.</span>
+</span>
+<span class="m" style="font-size:14px;color:#0b1210">Assessments</span>
+<span class="m" style="font-size:14px;color:#4a5551">10 min</span>
+</a><a class="row" href="/blogs/screen-first-engineers/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">03</span>
+<span style="min-width:0">
+<span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">How to Screen Your First 10 Engineers in India: A Founder’s Playbook</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch;text-wrap:pretty">A seven step screening process for founders with no recruiter and no ATS. It runs on a spreadsheet and a few calendar invites.</span>
+</span>
+<span class="m" style="font-size:14px;color:#0b1210">Hiring playbook</span>
+<span class="m" style="font-size:14px;color:#4a5551">10 min</span>
+</a><a class="row" href="/blogs/evidence-cited-scorecards/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">04</span>
+<span style="min-width:0">
+<span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">What Is an Evidence Cited AI Interview Scorecard? How to Audit One</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch;text-wrap:pretty">An AI score without evidence is an opinion with a number on it. What a cited scorecard contains and a five minute audit for any AI scorecard.</span>
+</span>
+<span class="m" style="font-size:14px;color:#0b1210">AI interviews</span>
+<span class="m" style="font-size:14px;color:#4a5551">8 min</span>
+</a><a class="row" href="/blogs/ai-resume-screening-thresholds/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">05</span>
+<span style="min-width:0">
+<span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">AI Resume Screening Thresholds: How to Set a Cutoff You Can Defend</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch;text-wrap:pretty">A resume score cutoff is a hiring decision you make before you have seen a single candidate. Rank, reject rarely, and read a sample of what you reject.</span>
+</span>
+<span class="m" style="font-size:14px;color:#0b1210">Resume screening</span>
+<span class="m" style="font-size:14px;color:#4a5551">11 min</span>
+</a></div>
+<div style="border-top:1px solid #e3e8e6"></div>
+</div>
+</section>
+
+</main>
+
+<!-- SUBSCRIBE -->
+<section aria-label="Subscribe" style="background:#f3f6f5;border-top:1px solid #e3e8e6;border-bottom:1px solid #e3e8e6">
+<div style="max-width:1280px;margin:0 auto;padding:72px clamp(20px,4vw,48px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px">
+<div style="flex:1 1 360px">
+<h2 style="margin:0;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(36px,4.6vw,56px);line-height:1.02">One email when we publish.</h2>
+<p style="margin:14px 0 0;font-size:16px;color:#4a5551">No digests. No product pitches.</p>
+</div>
+<form action="#" style="flex:0 1 480px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end">
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px">
+<label for="sub-email" style="font-size:12px;font-weight:500;color:#4a5551">Work email</label>
+<input id="sub-email" type="email" placeholder="name@company.com" style="min-height:48px;padding:0 18px;border:1px solid #7d8984;border-radius:999px;background:#ffffff;color:#0b1210;font-size:15px;width:100%">
+</div>
+<button type="submit" style="min-height:48px;padding:0 24px;border:1px solid #0b1210;border-radius:999px;background:transparent;color:#0b1210;font-size:14px;font-weight:600;cursor:pointer">Subscribe</button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#ffffff;color:#0b1210">
+<div style="max-width:1280px;margin:0 auto;padding:64px clamp(20px,4vw,48px) 40px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px">
+<div style="flex:1 1 280px;max-width:380px">
+<div style="display:inline-flex;align-items:center;gap:12px;font-size:20px;font-weight:600;letter-spacing:-0.01em">
+<img src="/logo.png" alt="" width="28" height="28" style="display:block;width:28px;height:28px;border-radius:7px">Kestrel</div>
+<p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:#4a5551">Precision hiring OS for seed to Series B. Screen, assess, and interview with AI before a human sees a candidate.</p>
+</div>
+<div class="fl" style="flex:0 1 720px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:32px">
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">PRODUCT</span>
+<a href="/#how-it-works">Workflow</a><a href="/#pricing">Pricing</a><a href="/#who-its-for">Who’s it for</a><a href="/#integrations">Integrations</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">COMPANY</span>
+<a href="#">About</a><a href="/blogs/" aria-current="page" style="color:#0b7a66;font-weight:600">Blog</a><a href="#">Careers</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">LEGAL</span>
+<a href="#">Privacy policy</a><a href="#">Terms of service</a><a href="#">Security</a>
+</div>
+</div>
+</div>
+<div style="margin-top:56px;padding-top:24px;border-top:1px solid #e3e8e6;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#5b6763">
+<span>© 2026 Kestrel. All rights reserved.</span>
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace">support@kestrelorg.com</span>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){
+var posts=[{"num": "01", "slug": "ai-interview-platform-india", "cat": "AI interviews", "read": "11 min", "title": "How to Evaluate an AI Interview Platform in India: A Buyer\u2019s Checklist", "dek": "Most teams shortlist on languages, price and demo polish. None of those says whether the scores are trustworthy. Eight questions, a weighted scorecard and a two week pilot."}, {"num": "02", "slug": "hackerrank-alternatives", "cat": "Assessments", "read": "10 min", "title": "HackerRank Alternatives for Indian Startups: How to Choose a Coding Assessment Tool", "dek": "Start with the job you need the tool to do, compare five types of alternative, then settle it with a weighted scorecard and a one role bake off."}, {"num": "03", "slug": "screen-first-engineers", "cat": "Hiring playbook", "read": "10 min", "title": "How to Screen Your First 10 Engineers in India: A Founder\u2019s Playbook", "dek": "A seven step screening process for founders with no recruiter and no ATS. It runs on a spreadsheet and a few calendar invites."}, {"num": "04", "slug": "evidence-cited-scorecards", "cat": "AI interviews", "read": "8 min", "title": "What Is an Evidence Cited AI Interview Scorecard? How to Audit One", "dek": "An AI score without evidence is an opinion with a number on it. What a cited scorecard contains and a five minute audit for any AI scorecard."}, {"num": "05", "slug": "ai-resume-screening-thresholds", "cat": "Resume screening", "read": "11 min", "title": "AI Resume Screening Thresholds: How to Set a Cutoff You Can Defend", "dek": "A resume score cutoff is a hiring decision you make before you have seen a single candidate. Rank, reject rarely, and read a sample of what you reject."}];
+var tabs=document.querySelectorAll('button[data-cat]');
+function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+function row(p){return '<a class="row" href="/blogs/'+p.slug+'/"><span style="font-family:\'JetBrains Mono\',ui-monospace,monospace;font-size:13px;color:#5b6763">'+p.num+'</span><span style="min-width:0"><span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">'+esc(p.title)+'</span><span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch;text-wrap:pretty">'+esc(p.dek)+'</span></span><span class="m" style="font-size:14px;color:#0b1210">'+p.cat+'</span><span class="m" style="font-size:14px;color:#4a5551">'+p.read+'</span></a>';}
+function show(cat){
+  var list=cat==='All'?posts:posts.filter(function(p){return p.cat===cat;});
+  var f=list[0]||posts[0], rest=list.slice(1);
+  document.getElementById('feat').setAttribute('href','/blogs/'+f.slug+'/');
+  var v={num:f.num,catUpper:f.cat.toUpperCase(),read:f.read,title:f.title,dek:f.dek};
+  document.querySelectorAll('[data-f]').forEach(function(el){el.textContent=v[el.getAttribute('data-f')];});
+  document.getElementById('rows').innerHTML=rest.map(row).join('');
+  document.getElementById('restLabel').textContent=rest.length+(rest.length===1?' article':' articles');
+  tabs.forEach(function(t){var on=t.getAttribute('data-cat')===cat;t.setAttribute('aria-pressed',on);t.style.borderBottomColor=on?'#0b7a66':'transparent';t.style.fontWeight=on?600:500;t.style.color=on?'#0b1210':'#4a5551';});
+}
+tabs.forEach(function(t){t.addEventListener('click',function(){show(t.getAttribute('data-cat'));});});
+})();
+</script>
+</body>
+</html>
