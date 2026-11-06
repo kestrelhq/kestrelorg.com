@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Resume Screening Thresholds: How to Set a Cutoff You Can Defend | Kestrel</title>
+<meta name="description" content="A resume score cutoff is a hiring decision you make before you have seen a single candidate. Rank, reject rarely, and read a sample of what you reject.">
+<link rel="canonical" href="https://kestrelorg.com/blogs/ai-resume-screening-thresholds/">
+<meta property="og:title" content="AI Resume Screening Thresholds: How to Set a Cutoff You Can Defend">
+<meta property="og:description" content="A resume score cutoff is a hiring decision you make before you have seen a single candidate. Rank, reject rarely, and read a sample of what you reject.">
+<meta property="og:url" content="https://kestrelorg.com/blogs/ai-resume-screening-thresholds/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.nl{color:#33403c}.nl:hover{color:#0b1210}
+.cta:hover{background:#1fbf9f}
+.bc:hover{color:#0b7a66;text-decoration:underline}
+.toc a{display:block;padding:8px 0;font-size:14px;line-height:1.4;color:#4a5551;border-top:1px solid #edf1ef}
+.toc a:hover{color:#0b7a66}
+.row{display:grid;grid-template-columns:56px minmax(0,1fr) 168px 88px;column-gap:24px;align-items:baseline;padding:28px 16px;margin:0 -16px;border-top:1px solid #e3e8e6;color:#0b1210}
+.row:hover{background:#f3f6f5}
+.row:hover .rt{color:#0b7a66}
+.prose p{margin:0 0 20px;font-size:17px;line-height:1.7;color:#1c2723;text-wrap:pretty}
+.prose h2{margin:56px 0 18px;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(30px,3.2vw,38px);line-height:1.1;text-wrap:balance;scroll-margin-top:24px}
+.prose h3{margin:36px 0 12px;font-size:21px;line-height:1.3;font-weight:600;letter-spacing:-0.01em;text-wrap:balance}
+.prose ul,.prose ol{margin:0 0 24px;padding-left:24px;font-size:17px;line-height:1.65;color:#1c2723}
+.prose li{margin-bottom:10px}
+.prose li::marker{color:#0b7a66}
+.prose a{color:#0b7a66;text-decoration:underline;text-underline-offset:3px}
+.prose strong{font-weight:600;color:#0b1210}
+.tw{overflow-x:auto;margin:28px 0 32px;border:1px solid #e3e8e6;border-radius:12px}
+.prose table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px;line-height:1.5}
+.prose th{text-align:left;padding:12px 16px;background:#f3f6f5;font-weight:600;font-size:13px;color:#33403c;border-bottom:1px solid #e3e8e6}
+.prose td{padding:12px 16px;vertical-align:top;border-bottom:1px solid #edf1ef;color:#1c2723}
+.prose tr:last-child td{border-bottom:0}
+.note{margin:28px 0;padding:20px 24px;background:#f3f6f5;border:1px solid #e3e8e6;border-radius:12px}
+.note p{margin:0;font-size:16px}
+.short{margin:0 0 8px;padding:24px 28px;background:#f3f6f5;border:1px solid #e3e8e6;border-radius:12px}
+.short .lbl{margin:0 0 12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;color:#0b7a66;font-weight:500}
+.short ul{margin:0}
+.short li:last-child{margin-bottom:0}
+.kfit{margin:56px 0 0;padding:32px;background:#eefaf7;border:1px solid #b6e8dd;border-radius:16px}
+.kfit h2{margin-top:0}
+.kfit p:last-child{margin-bottom:0}
+.faq details{border-top:1px solid #e3e8e6}
+.faq details:last-child{border-bottom:1px solid #e3e8e6}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;min-height:56px;font-size:18px;font-weight:600;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-size:24px;font-weight:400;color:#0b7a66;flex:0 0 auto}
+.faq details[open] summary::after{content:'\2212'}
+.faq details p{margin:0 0 20px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #0b7a66;outline-offset:2px}
+.fl a:hover{color:#0b1210;text-decoration:underline}
+@media (max-width:820px){
+ .row{grid-template-columns:44px minmax(0,1fr);row-gap:6px}
+ .row .m{grid-column:2}
+ .navlinks{display:none !important}
+ .kfit{padding:24px}
+}
+</style>
+<meta property="article:published_time" content="2026-11-07">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI Resume Screening Thresholds: How to Set a Cutoff You Can Defend","description":"A resume score cutoff is a hiring decision you make before you have seen a single candidate. Rank, reject rarely, and read a sample of what you reject.","datePublished":"2026-11-07","dateModified":"2026-11-07","mainEntityOfPage":"https://kestrelorg.com/blogs/ai-resume-screening-thresholds/","image":"https://kestrelorg.com/logo.png","author":{"@type":"Organization","name":"Kestrel"},"publisher":{"@type":"Organization","name":"Kestrel","logo":{"@type":"ImageObject","url":"https://kestrelorg.com/logo.png"}}}</script>
+</head>
+<body>
+<div style="min-height:100vh;background:#ffffff;color:#0b1210;font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.5">
+
+<header style="background:#ffffff;border-bottom:1px solid #e3e8e6">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="/" aria-label="Kestrel home" style="display:inline-flex;align-items:center;gap:12px;font-size:20px;font-weight:600;letter-spacing:-0.01em;color:#0b1210">
+<img src="/logo.png" alt="" width="32" height="32" style="display:block;width:32px;height:32px;border-radius:8px">Kestrel</a>
+<nav class="navlinks" aria-label="Primary" style="display:flex;gap:32px;font-size:15px">
+<a class="nl" href="/#how-it-works">Workflow</a>
+<a class="nl" href="/#pricing">Pricing</a>
+<a class="nl" href="/#who-its-for">Who’s it for</a>
+<a class="nl" href="/#faq">FAQ</a>
+</nav>
+<a class="cta" href="https://cal.com/nithin-s-ctcmul/15min" style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;background:#2ad1b0;color:#04201b;border-radius:999px;font-size:14px;font-weight:600">Book a demo →</a>
+</div>
+</header>
+
+<main style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px)">
+
+<header style="padding:40px 0 48px">
+<nav aria-label="Breadcrumb" style="display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;color:#5b6763">
+<a class="bc" href="/blogs/" style="color:#4a5551;display:inline-flex;align-items:center;min-height:44px">BLOG</a>
+<span aria-hidden="true" style="display:inline-flex;align-items:center">/</span>
+<span style="display:inline-flex;align-items:center;color:#0b7a66">RESUME SCREENING</span>
+</nav>
+<h1 style="margin:12px 0 0;max-width:20ch;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(40px,6vw,80px);line-height:1.02;letter-spacing:-0.01em;text-wrap:balance">AI Resume Screening Thresholds: How to Set a Cutoff You Can Defend</h1>
+</header>
+
+<div style="border-top:1px solid #0b1210;padding:40px 0 80px;display:flex;flex-wrap:wrap;gap:40px clamp(32px,6vw,96px);align-items:flex-start">
+
+<aside aria-label="Article details" style="flex:0 0 220px;min-width:0">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:20px 24px">
+<div><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">TOPIC</div><div style="margin-top:6px;font-size:14px">Resume screening</div></div>
+<div><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">PUBLISHED</div><div style="margin-top:6px;font-size:14px"><time datetime="2026-11-07">7 Nov 2026</time></div></div><div><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">READ</div><div style="margin-top:6px;font-size:14px">11 min</div></div>
+</div>
+<nav class="toc" aria-label="On this page" style="margin-top:32px">
+<div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763;padding-bottom:8px">ON THIS PAGE</div>
+<a href="#risk">Why a cutoff is riskier than it looks</a>
+<a href="#rank">Rank first, reject only what you can justify</a>
+<a href="#zones">Use three zones, not a single line</a>
+<a href="#number">How to choose your first number</a>
+<a href="#sample">Sample what you reject</a>
+<a href="#knockouts">Audit your knockout rules</a>
+<a href="#groups">Check outcomes by group</a>
+<a href="#human">A human in the loop only counts if they review</a>
+<a href="#compliance">Compliance snapshot</a>
+<a href="#record">Write down your threshold</a>
+<a href="#audit">A two week audit</a>
+<a href="#kestrel">Where Kestrel fits</a>
+<a href="#faq">FAQs</a>
+</nav>
+</aside>
+
+<article class="prose" style="flex:1 1 560px;max-width:720px;min-width:0">
+
+<p>A resume score cutoff is a hiring decision you make before you have seen a single candidate. Most teams pick the number first and never check what it rejected. Do it the other way round: rank candidates, reject rarely, read a sample of what you reject, and write down why the line sits where it does.</p>
+
+<div class="short">
+<p class="lbl">SHORT ANSWER</p>
+<ul>
+<li>There is no universal right cutoff. Any vendor number, default included, is a starting point to calibrate on your own past applicants.</li>
+<li>Use three zones instead of two: advance, human review, reject. Keep the reject zone small until your own sampling shows it is safe.</li>
+<li>Read a sample of rejected resumes every week. The share a recruiter would have advanced is an estimate of your false rejection rate.</li>
+<li>Compare shortlist rates across groups, and test proxies such as college name, PIN code and graduation year.</li>
+<li>Keep a named person accountable for every rejection, and keep a one page record of your threshold.</li>
+</ul>
+</div>
+
+<h2 id="risk">Why a cutoff is riskier than it looks</h2>
+
+<p>A score threshold has two kinds of error, and only one is visible. If the tool advances someone weak, a recruiter sees it in the next round. If it rejects someone strong, nobody sees anything. The candidate just disappears.</p>
+
+<p>That asymmetry is why teams drift toward strict cutoffs as application volume rises. In India the pressure is real: <a href="https://www.thehirehub.ai/blog/ai-resume-screening-india-2026">TheHireHub</a> cites LinkedIn research, reported in the press, saying applicants per job have more than doubled since early 2022. The sample size and method were not published, so read it as direction rather than a precise figure. A strict line feels like relief, and it may be quietly removing the people you wanted.</p>
+
+<p>The evidence on automated filters points the same way. A Harvard Business School study of more than 8,000 workers and 2,250 executives in the US, UK and Germany found that 88% of employers agreed that qualified high skill candidates are screened out because their resumes do not match the job criteria. For middle skill roles the figure was 94% (<a href="https://itpro.com/business-strategy/recruitment/360794/automated-hiring-systems-filter-out-qualified-candidates">IT Pro, September 2021</a>). This is a survey of employers’ own views, from outside India and from before today’s AI scoring tools, so it says nothing about your tool’s error rate. It does show that the failure mode has been recognised for years.</p>
+
+<h2 id="rank">Rank first. Reject only what you can justify in one sentence.</h2>
+
+<p>The safest use of a resume score is to order the queue, not to close the door. <a href="https://www.thehirehub.ai/blog/ai-resume-screening-india-2026">TheHireHub’s India playbook</a> makes the same point: automate rejection only for legal must haves, such as a required licence or work authorisation, and use scores to rank everything else.</p>
+
+<p>A useful test is whether you can finish this sentence for every auto rejected candidate: “We rejected this person because ______, and a recruiter can see that on the resume.” “Score was 37” does not finish it. “The role requires a valid work permit and the resume states none” does.</p>
+
+<h2 id="zones">Use three zones, not a single line</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Zone</th><th>Rule</th><th>Who acts</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Advance</td><td>Score at or above your upper line</td><td>Recruiter confirms and moves to the next round</td><td>Read the reasoning, not only the number</td></tr>
+<tr><td>Review</td><td>Score between the two lines</td><td>Recruiter reads and decides</td><td>Start wide, narrow only with evidence</td></tr>
+<tr><td>Reject</td><td>Score below your lower line, or a true legal must have is missing</td><td>Automatic, but logged and sampled</td><td>Keep small at first; candidate can ask for a human look</td></tr>
+</tbody></table></div>
+
+<p>The review band is where the value is. It turns a hard line into a queue where a person can work. If the band is too big for your team, fix the job description or the sourcing channel instead of raising the cutoff.</p>
+
+<h2 id="number">How to choose your first number</h2>
+
+<p>Do not copy a number from a blog post or a default. Calibrate on your own history.</p>
+
+<ol>
+<li>Pick one role you hired for recently, with 80 to 100 past applications and known outcomes: rejected at screen, interviewed, hired, did well.</li>
+<li>Score them blind, with names and schools hidden from the reviewer.</li>
+<li>Plot outcomes against scores. Look at where the people you later interviewed or hired landed. If strong hires scored in the bottom third, the scoring does not fit this role yet.</li>
+<li>Set the lower line below the lowest score of anyone you would now regret rejecting. Everything between the lines goes to human review.</li>
+<li>Record the date, role, sample size and result. You will want it in six months.</li>
+</ol>
+
+<p>This is a method, not a benchmark. Ten or twenty examples will not give a stable answer, and a role with few past hires cannot be calibrated this way. In that case, use the tool for ranking only and make no automatic rejections.</p>
+
+<h2 id="sample">Sample what you reject</h2>
+
+<p>The most useful habit is reading the reject pile. Two ways to do it:</p>
+
+<ul>
+<li><strong>Weekly tail read.</strong> A recruiter reads 20 to 30 applications from the bottom of the ranking each week and logs how many they would have advanced. <a href="https://www.thehirehub.ai/blog/ai-resume-screening-india-2026">TheHireHub</a> recommends this sample size.</li>
+<li><strong>Blind re score.</strong> Take 100 rejected applications, remove names and schools, and have a recruiter or hiring manager judge them against the real job. The share they would advance is your estimated false rejection rate. It is an estimate, because rejected candidates were never interviewed.</li>
+</ul>
+
+<p>The sample sizes come from practitioner advice, not research, so treat them as reasonable starting points.</p>
+
+<p>Set your trigger before you look. For example: if a recruiter would advance more than 1 in 10 sampled rejects, lower the cutoff and sample again. The 1 in 10 is an illustration. Replace it with your own tolerance.</p>
+
+<h2 id="knockouts">Audit your knockout rules separately</h2>
+
+<p>Hard rules often do more damage than the score. A gap longer than six months, a required degree, a specific college tier, minimum years in a job title: each fires before scoring, so affected candidates never reach it.</p>
+
+<p>A practical rule of thumb is to treat any knockout that fires on more than a few percent of your pool as a candidate for demotion from rule to score input. Employment gaps and degree requirements are the usual first two. Also check whether your own hires meet the requirement. If your current engineers would not pass your filter, the filter should not demand it.</p>
+
+<p>For engineering roles, the question for each requirement is whether it predicts the work. Test that against your own hiring history, and weigh a work sample or structured interview alongside the resume.</p>
+
+<h2 id="groups">Check outcomes by group, and test proxies</h2>
+
+<p>A cutoff can look neutral and still produce uneven results. A common screening check is the four fifths rule: divide each group’s shortlist rate by the highest group’s rate and flag any ratio below 0.80. It comes from the US Uniform Guidelines on Employee Selection Procedures (1978) (<a href="https://www.prevuehr.com/resources/insights/adverse-impact-analysis-four-fifths-rule/">Prevue HR</a>). Three cautions apply:</p>
+
+<ul>
+<li>It is a US rule of thumb, not Indian law. Use it as an internal alarm. TheHireHub also reports finding no Indian statutory equivalent.</li>
+<li>It ignores sample size, so small pools can trigger it by chance or hide a real gap. Add a significance test once you have volume.</li>
+<li>Passing it is a good sign, not a clearance.</li>
+</ul>
+
+<p>India specific proxies deserve their own test. PIN code, school name and graduation year can stand in for caste, region or age even when those fields are never captured. Mask them, rerun the same applicants and compare shortlists, and decide in advance how big a shift counts as a problem. No published Indian study measures caste inference from these fields, so this check is precautionary.</p>
+
+<p>Research on language models is worth knowing but should not be over read. A University of Washington audit of three language models, run on more than 550 real resumes, found them preferring white male associated names over Black male associated names in every one of 27 tests, in a US setting (<a href="https://www.techrepublic.com/article/ai-hiring-bias-research/">TechRepublic, March 2026</a>). That shows language models can carry bias. There is no evidence about any particular tool used in India.</p>
+
+<h2 id="human">A human in the loop only counts if they actually review</h2>
+
+<p>Writing “recruiter review” into a process document is not a safeguard if the recruiter clicks through. In a second University of Washington experiment, with 528 participants screening resumes under time pressure, reviewers followed an AI’s racial preference up to 90% of the time (<a href="https://www.techrepublic.com/article/ai-hiring-bias-research/">TechRepublic</a>). Design review so it can disagree:</p>
+
+<ul>
+<li>Show the reasoning behind each score, not only the number.</li>
+<li>Make override one click, and log every override.</li>
+<li>Read the middle and bottom of the ranking as well as the top. <a href="https://www.thepeoplesboard.com/?p=18553">The People’s Board</a> suggests reviewing the top 30 to 50 rather than the top five.</li>
+<li>Name one accountable person per role.</li>
+</ul>
+
+<h2 id="compliance">Compliance snapshot (not legal advice)</h2>
+
+<p><strong>India (DPDP).</strong> The DPDP Rules were notified in November 2025, with most compliance duties expected around May 2027. Lawyers at SNG &amp; Partners note that the Act expects a data fiduciary to keep personal data accurate and complete when it may be used to make decisions about a person (<a href="https://www.barandbench.com/amp/story/law-firms/view-point/from-consent-to-compliance-navigating-the-implications-of-dpdp-act-on-employment-practices">Bar &amp; Bench, June 2025</a>). How that applies to job applicants is still debated. Tell applicants that AI helps screen their application, and give them a way to ask for a human look.</p>
+
+<p><strong>EU.</strong> If you hire in the EU, AI used in employment is a high risk category under the EU AI Act. Following the Digital Omnibus, the high risk obligations are now scheduled for 2 December 2027.</p>
+
+<p><strong>US.</strong> In <em>Mobley v. Workday</em>, a federal court preliminarily certified a nationwide age discrimination collective in May 2025 over Workday’s AI screening (<a href="https://www.hklaw.com/en/insights/publications/2025/05/federal-court-allows-collective-action-lawsuit-over-alleged">Holland &amp; Knight</a>). As of April 2026 the case was still pending in the Northern District of California. Certification is not a finding that the tools discriminate, and Workday disputes the claims. The case is a reminder that both vendors and employers are being asked for audit trails.</p>
+
+<p>If you screen with a vendor, you are usually still the one answerable for the outcome. Ask what the vendor can show you, per candidate, about why a score came out as it did.</p>
+
+<h2 id="record">Write down your threshold</h2>
+
+<p>Keep one page per role family. It protects you in an audit and helps the next recruiter. It should cover:</p>
+
+<ul>
+<li>Role family and date</li>
+<li>What the score is made of</li>
+<li>Lower and upper lines, and the review band between them</li>
+<li>Hard knockouts, and the reason each exists</li>
+<li>Calibration sample: size, source, result</li>
+<li>Weekly sampling plan and who runs it</li>
+<li>Group level check: method, last run, result</li>
+<li>Named owner, and when you will revisit</li>
+</ul>
+
+<h2 id="audit">A two week audit you can run now</h2>
+
+<p><strong>Week 1.</strong> Pull the last 90 days of auto rejections for two roles. Note whether a hard rule or a low score caused each one. Blind re-score 100 of them and compute the share a recruiter would advance.</p>
+
+<p><strong>Week 2.</strong> Compare shortlist rates across the groups you can lawfully and reliably measure. Mask college name, PIN code and graduation year, re-run, and compare. Then decide what to change: widen the review band, demote a knockout, or fix the job description.</p>
+
+<p>Repeat quarterly. Thresholds drift as your applicant pool changes.</p>
+
+<section class="kfit" id="kestrel" aria-label="Where Kestrel fits">
+<h2>Where Kestrel fits</h2>
+
+<p><a href="https://kestrelorg.com/">Kestrel</a> is an AI native hiring platform for engineering teams. Its resume screening scores each applicant from 0 to 100 against the job description. The score draws on four dimensions: technical skills match, seniority signal, project relevance and a small education component (at most 10 points out of 100). It comes with a short plain English explanation of the score, plus notes on notable gaps or strengths.</p>
+
+<p>You set the resume score threshold for each job. Applicants below it are rejected automatically, and applicants at or above it move to the next round. The default is 40. Treat that default as a starting point to calibrate as described above, and set it low until your own sampling shows it is safe. The threshold is a single line, with no configurable review band. A resume that can’t be read reliably, or a score that looks implausible, goes to a recruiter instead of being decided automatically.</p>
+
+<p>A person can reverse a system rejection and move the candidate on, and must record a reason, which is logged in the audit trail. Manual rejections are not reversed this way.</p>
+
+<p>Whichever tool you use, ours included, check that it explains each score, lets you read what it rejected and lets a human override. You can see how screening sits in the hiring pipeline in the <a href="https://kestrelorg.com/#how-it-works">how it works section</a>.</p>
+</section>
+
+<h2 id="faq">FAQs</h2>
+
+<div class="faq">
+<details>
+<summary>What is a good resume screening score cutoff?</summary>
+<p>There is no universal number. Scoring scales differ by tool, and the right line depends on your role, your applicant pool and what a missed hire costs you. Calibrate on past applications, then sample what you reject.</p>
+</details>
+<details>
+<summary>Should I auto reject candidates below a threshold?</summary>
+<p>Only with care. Many practitioners suggest ranking everything and automating rejection just for legal must haves. If you do auto reject, keep the lower line low, log decisions and read a sample every week.</p>
+</details>
+<details>
+<summary>How do I know if my screening is rejecting good candidates?</summary>
+<p>Blind re-score a sample of rejected applications with a recruiter or hiring manager. The share they would advance estimates your false rejection rate.</p>
+</details>
+<details>
+<summary>Is AI resume screening legal in India?</summary>
+<p>No India specific law bans it. The DPDP Act and Rules affect how you handle applicant data, and the main duties are expected around May 2027. Take legal advice for your situation.</p>
+</details>
+<details>
+<summary>Does the four fifths rule apply in India?</summary>
+<p>Not as law. It is a US benchmark that some teams use as an internal alarm for uneven shortlist rates.</p>
+</details>
+<details>
+<summary>How often should I review my threshold?</summary>
+<p>Quarterly, and whenever the job description, sourcing channel or applicant volume changes a lot.</p>
+</details>
+</div>
+
+</article>
+</div>
+
+<section aria-label="Keep reading" style="padding-bottom:80px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:20px">
+<h2 style="margin:0;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:32px">Keep reading</h2>
+<a href="/blogs/" style="font-size:14px;font-weight:600;color:#0b7a66">All articles →</a>
+</div>
+<div>
+<a class="row" href="/blogs/evidence-cited-scorecards/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">04</span>
+<span style="min-width:0"><span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">What Is an Evidence Cited AI Interview Scorecard? How to Audit One</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch">An AI score without evidence is an opinion with a number on it.</span></span>
+<span class="m" style="font-size:14px">AI interviews</span>
+<span class="m" style="font-size:14px;color:#4a5551">8 min</span>
+</a>
+<a class="row" href="/blogs/screen-first-engineers/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">03</span>
+<span style="min-width:0"><span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">How to Screen Your First 10 Engineers in India: A Founder’s Playbook</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch">A seven step screening process that runs on a spreadsheet and a few calendar invites.</span></span>
+<span class="m" style="font-size:14px">Hiring playbook</span>
+<span class="m" style="font-size:14px;color:#4a5551">10 min</span>
+</a>
+<a class="row" href="/blogs/ai-interview-platform-india/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">01</span>
+<span style="min-width:0"><span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">How to Evaluate an AI Interview Platform in India: A Buyer’s Checklist</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch">Eight questions, a weighted scorecard and a two week pilot.</span></span>
+<span class="m" style="font-size:14px">AI interviews</span>
+<span class="m" style="font-size:14px;color:#4a5551">11 min</span>
+</a>
+<div style="border-top:1px solid #e3e8e6"></div>
+</div>
+</section>
+
+</main>
+
+<footer style="background:#f3f6f5;color:#0b1210;border-top:1px solid #e3e8e6">
+<div style="max-width:1280px;margin:0 auto;padding:64px clamp(20px,4vw,48px) 40px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px">
+<div style="flex:1 1 280px;max-width:380px">
+<div style="display:inline-flex;align-items:center;gap:12px;font-size:20px;font-weight:600;letter-spacing:-0.01em">
+<img src="/logo.png" alt="" width="28" height="28" style="display:block;width:28px;height:28px;border-radius:7px">Kestrel</div>
+<p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:#4a5551">Precision hiring OS for seed to Series B. Screen, assess, and interview with AI before a human sees a candidate.</p>
+</div>
+<div class="fl" style="flex:0 1 720px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:32px">
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">PRODUCT</span>
+<a href="/#how-it-works">Workflow</a><a href="/#pricing">Pricing</a><a href="/#who-its-for">Who’s it for</a><a href="/#integrations">Integrations</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">COMPANY</span>
+<a href="#">About</a><a href="/blogs/" aria-current="page" style="color:#0b7a66;font-weight:600">Blog</a><a href="#">Careers</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">LEGAL</span>
+<a href="#">Privacy policy</a><a href="#">Terms of service</a><a href="#">Security</a>
+</div>
+</div>
+</div>
+<div style="margin-top:56px;padding-top:24px;border-top:1px solid #e3e8e6;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#5b6763">
+<span>© 2026 Kestrel. All rights reserved.</span>
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace">support@kestrelorg.com</span>
+</div>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
