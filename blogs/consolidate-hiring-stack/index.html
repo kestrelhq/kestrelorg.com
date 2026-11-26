@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When to Consolidate Your Hiring Stack (and When Not To) | Kestrel</title>
+<meta name="description" content="Five tools or one? A startup guide to auditing your recruiting tech stack: overlap, handoffs, data, cost and exit. Includes when not to consolidate.">
+<link rel="canonical" href="https://kestrelorg.com/blogs/consolidate-hiring-stack/">
+<link rel="icon" href="https://kestrelorg.com/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="256x256" href="https://kestrelorg.com/favicon.png">
+<link rel="apple-touch-icon" href="https://kestrelorg.com/favicon.png">
+<meta property="og:title" content="When to Consolidate Your Hiring Stack (and When Not To)">
+<meta property="og:description" content="Five tools or one? A startup guide to auditing your recruiting tech stack: overlap, handoffs, data, cost and exit. Includes when not to consolidate.">
+<meta property="og:url" content="https://kestrelorg.com/blogs/consolidate-hiring-stack/">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.nl{color:#33403c}.nl:hover{color:#0b1210}
+.cta:hover{background:#1fbf9f}
+.bc:hover{color:#0b7a66;text-decoration:underline}
+.toc a{display:block;padding:8px 0;font-size:14px;line-height:1.4;color:#4a5551;border-top:1px solid #edf1ef}
+.toc a:hover{color:#0b7a66}
+.row{display:grid;grid-template-columns:56px minmax(0,1fr) 168px 88px;column-gap:24px;align-items:baseline;padding:28px 16px;margin:0 -16px;border-top:1px solid #e3e8e6;color:#0b1210}
+.row:hover{background:#f3f6f5}
+.row:hover .rt{color:#0b7a66}
+.prose p{margin:0 0 20px;font-size:17px;line-height:1.7;color:#1c2723;text-wrap:pretty}
+.prose h2{margin:56px 0 18px;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(30px,3.2vw,38px);line-height:1.1;text-wrap:balance;scroll-margin-top:24px}
+.prose h3{margin:36px 0 12px;font-size:21px;line-height:1.3;font-weight:600;letter-spacing:-0.01em;text-wrap:balance}
+.prose ul,.prose ol{margin:0 0 24px;padding-left:24px;font-size:17px;line-height:1.65;color:#1c2723}
+.prose li{margin-bottom:10px}
+.prose li::marker{color:#0b7a66}
+.prose a{color:#0b7a66;text-decoration:underline;text-underline-offset:3px}
+.prose strong{font-weight:600;color:#0b1210}
+.tw{overflow-x:auto;margin:28px 0 32px;border:1px solid #e3e8e6;border-radius:12px}
+.prose table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px;line-height:1.5}
+.prose th{text-align:left;padding:12px 16px;background:#f3f6f5;font-weight:600;font-size:13px;color:#33403c;border-bottom:1px solid #e3e8e6}
+.prose td{padding:12px 16px;vertical-align:top;border-bottom:1px solid #edf1ef;color:#1c2723}
+.prose tr:last-child td{border-bottom:0}
+.note{margin:28px 0;padding:20px 24px;background:#f3f6f5;border:1px solid #e3e8e6;border-radius:12px}
+.note p{margin:0;font-size:16px}
+.kfit{margin:56px 0 0;padding:32px;background:#eefaf7;border:1px solid #b6e8dd;border-radius:16px}
+.kfit h2{margin-top:0}
+.kfit p:last-child{margin-bottom:0}
+.faq details{border-top:1px solid #e3e8e6}
+.faq details:last-child{border-bottom:1px solid #e3e8e6}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;min-height:56px;font-size:18px;font-weight:600;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';font-size:24px;font-weight:400;color:#0b7a66;flex:0 0 auto}
+.faq details[open] summary::after{content:'\2212'}
+.faq details p{margin:0 0 20px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #0b7a66;outline-offset:2px}
+.fl a:hover{color:#0b1210;text-decoration:underline}
+@media (max-width:820px){
+ .row{grid-template-columns:44px minmax(0,1fr);row-gap:6px}
+ .row .m{grid-column:2}
+ .navlinks{display:none !important}
+ .kfit{padding:24px}
+}
+</style>
+<meta property="article:published_time" content="2026-11-26">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"When to Consolidate Your Hiring Stack (and When Not To)","description":"Five tools or one? A startup guide to auditing your recruiting tech stack: overlap, handoffs, data, cost and exit. Includes when not to consolidate.","datePublished":"2026-11-26","dateModified":"2026-11-26","mainEntityOfPage":"https://kestrelorg.com/blogs/consolidate-hiring-stack/","image":"https://kestrelorg.com/logo.png","author":{"@type":"Organization","name":"Kestrel"},"publisher":{"@type":"Organization","name":"Kestrel","logo":{"@type":"ImageObject","url":"https://kestrelorg.com/logo.png"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many hiring tools is too many?","acceptedAnswer":{"@type":"Answer","text":"There is no right number. Pin's survey found 38.8% of teams use four or more day to day, and Metaview describes leading teams as running three or four connected tools. Judge by handoffs and overlap, not count."}},{"@type":"Question","name":"Is all-in-one better than best-of-breed?","acceptedAnswer":{"@type":"Answer","text":"Not always. All-in-one reduces handoffs and copies of data, while best-of-breed can do one job better. The right answer depends on what you hire for and how often."}},{"@type":"Question","name":"Will consolidating save money?","acceptedAnswer":{"@type":"Answer","text":"Possibly, if you retire overlapping tools. Count migration, training and any contracts you must run to term. We have not found independent evidence on savings."}},{"@type":"Question","name":"Should a seed-stage startup consolidate?","acceptedAnswer":{"@type":"Answer","text":"If you hire a few people a year, probably not yet. Keep a simple ATS and a short audit list, and revisit when hiring picks up or handoffs start to hurt."}},{"@type":"Question","name":"What about candidate data under DPDP?","acceptedAnswer":{"@type":"Answer","text":"Every vendor that holds applicant data adds a place to secure and delete it. Map where applicant data lives and take legal advice on notices and retention."}}]}</script>
+</head>
+<body>
+<div style="min-height:100vh;background:#ffffff;color:#0b1210;font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.5">
+
+<header style="background:#ffffff;border-bottom:1px solid #e3e8e6">
+<div style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px);min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="/" aria-label="Kestrel home" style="display:inline-flex;align-items:center;gap:12px;font-size:20px;font-weight:600;letter-spacing:-0.01em;color:#0b1210">
+<img src="/logo.png" alt="" width="32" height="32" style="display:block;width:32px;height:32px;border-radius:8px">Kestrel</a>
+<nav class="navlinks" aria-label="Primary" style="display:flex;gap:32px;font-size:15px">
+<a class="nl" href="/#how-it-works">Workflow</a>
+<a class="nl" href="/#pricing">Pricing</a>
+<a class="nl" href="/#who-its-for">Who's it for</a>
+<a class="nl" href="/#faq">FAQ</a>
+</nav>
+<a class="cta" href="https://cal.com/nithin-s-ctcmul/15min" style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;background:#2ad1b0;color:#04201b;border-radius:999px;font-size:14px;font-weight:600">Book a demo &rarr;</a>
+</div>
+</header>
+
+<main style="max-width:1280px;margin:0 auto;padding:0 clamp(20px,4vw,48px)">
+
+<header style="padding:40px 0 48px">
+<nav aria-label="Breadcrumb" style="display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;color:#5b6763">
+<a class="bc" href="/blogs/" style="color:#4a5551;display:inline-flex;align-items:center;min-height:44px">BLOG</a>
+<span aria-hidden="true" style="display:inline-flex;align-items:center">/</span>
+<span style="display:inline-flex;align-items:center;color:#0b7a66">HIRING PLAYBOOK</span>
+</nav>
+<h1 style="margin:12px 0 0;max-width:20ch;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:clamp(40px,6vw,80px);line-height:1.02;letter-spacing:-0.01em;text-wrap:balance">When to Consolidate Your Hiring Stack (and When Not To)</h1>
+</header>
+
+<div style="border-top:1px solid #0b1210;padding:40px 0 80px;display:flex;flex-wrap:wrap;gap:40px clamp(32px,6vw,96px);align-items:flex-start">
+
+<aside aria-label="Article details" style="flex:0 0 220px;min-width:0">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:20px 24px">
+<div><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">TOPIC</div><div style="margin-top:6px;font-size:14px">Hiring playbook</div></div>
+<div><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">PUBLISHED</div><div style="margin-top:6px;font-size:14px"><time datetime="2026-11-26">26 Nov 2026</time></div></div><div><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">READ</div><div style="margin-top:6px;font-size:14px">10 min</div></div>
+<div><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">SOURCES CHECKED</div><div style="margin-top:6px;font-size:14px">Nov 2026</div></div>
+</div>
+<nav class="toc" aria-label="On this page" style="margin-top:32px">
+<div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763;padding-bottom:8px">ON THIS PAGE</div>
+<a href="#stack">What is in a typical hiring stack</a>
+<a href="#evidence">What the evidence says</a>
+<a href="#signs">Six signs it is time to consolidate</a>
+<a href="#reasons">Six reasons to leave the stack alone</a>
+<a href="#audit">Run a one-hour stack audit</a>
+<a href="#questions">Six questions before you decide</a>
+<a href="#stages">Move in stages</a>
+<a href="#kestrel">Where Kestrel fits</a>
+<a href="#faq">Frequently asked questions</a>
+</nav>
+</aside>
+
+<article class="prose" style="flex:1 1 560px;max-width:720px;min-width:0">
+
+<p>Many teams count their hiring tools when they should count handoffs: the places where candidate information gets stuck, copied or lost. If that happens often, consolidating can help. If your stack works, merging it is a project that costs time and may buy you little. This guide gives a one-hour audit, six decision questions and a safe way to move if you decide to.</p>
+
+<ul>
+<li><strong>Count handoffs, not tools.</strong> Every place a person re-types, exports or pastes candidate data is a cost.</li>
+<li><strong>Consolidate when</strong> the same candidate lives in three places, feedback is scattered, or you pay for overlapping features.</li>
+<li><strong>Do not consolidate just because a vendor says fewer is better.</strong> Every source we found on this topic is a vendor.</li>
+<li><strong>Check export, API and contract terms</strong> before you move anything.</li>
+<li><strong>Migrate one role first</strong> and run the old and new set-ups side by side.</li>
+</ul>
+
+<h2 id="stack">What is in a typical hiring stack</h2>
+
+<p>Vendor guides list similar building blocks. Metaview's October 2026 guide walks through ten workflows, and Deel's covers the path from sourcing to payroll. For a startup hiring engineers, the parts that matter most are: an applicant tracking system, a sourcing or job-board tool, a scheduling tool, an assessment platform, an interview tool, a background-check service, and an offer or HRIS handoff layer. If two layers do the same job in your stack, that is overlap. If one layer's output has to be moved by hand to another, that is a handoff.</p>
+
+<h2 id="evidence">What the evidence says (and does not)</h2>
+
+<p>There is little independent research on whether consolidating hiring tools improves outcomes. Pin's 2026 stack report states that no independent view of the recruiting stack exists, although the report itself cites third-party surveys. Its figures show how common fragmentation is. They do not show that consolidation fixes it:</p>
+
+<ul>
+<li>62% of organisations pay for two to four HR solutions from different vendors, and 15% rely on one. Pin attributes both figures to HR.com (2025).</li>
+<li>39% say their solutions are usefully integrated, also from HR.com.</li>
+<li>In Pin's own 2026 user survey, 38.8% of teams use four or more recruiting tools day to day.</li>
+</ul>
+
+<p>Treat these as directional. Pin sells a consolidated platform. The HR.com figures come from a small survey (n=225, as shown in Pin's chart source), and Pin describes its own survey as covering more than 2,000 organisations and 20,000 users without saying how respondents were chosen.</p>
+
+<p>Metaview's guide says leading teams run three or four deeply connected tools with the ATS as the source of truth. It adds that under 50 employees an all-in-one ATS often covers enough, and above 100 point tools with native integrations usually do better. None of these thresholds is sourced, and the guide is published by a vendor that sells several of the tools it recommends. Use the numbers as a prompt for your own thinking.</p>
+
+<p>The vendors share one habit: Pin, Spark Hire, Metaview and Deel each recommend whatever their own product covers. That does not make them wrong, but it does mean you should test the advice on your own data.</p>
+
+<h2 id="signs">Six signs it is time to consolidate</h2>
+
+<ol>
+<li><strong>You re-enter candidate data.</strong> Someone copies scores from an assessment tool into the ATS, or notes from a call into a sheet.</li>
+<li><strong>Feedback lives in three places.</strong> Interviewers leave opinions in chat, a doc and the ATS.</li>
+<li><strong>You cannot answer &ldquo;why did we reject this person?&rdquo;</strong> Evidence is spread across tools and the decision trail is incomplete.</li>
+<li><strong>You pay for overlap.</strong> Two tools schedule interviews, or three send candidate emails.</li>
+<li><strong>Candidates juggle links.</strong> Each round has a different login, test platform or calendar link.</li>
+<li><strong>Applicant data sits in many vendors.</strong> Each extra tool is another copy of personal data to secure, retain and delete. Under India's DPDP Act, with main duties expected around May 2027, fewer copies are easier to govern.</li>
+</ol>
+
+<h2 id="reasons">Six reasons to leave the stack alone</h2>
+
+<ol>
+<li><strong>It works.</strong> If handoffs are rare and nobody complains, you may be solving a problem you do not have.</li>
+<li><strong>A tool you love is hard to replace.</strong> If a best-in-class tool does one job much better than an all-in-one, keep it and connect it.</li>
+<li><strong>You hire rarely.</strong> At a handful of hires a year, a migration can cost more than a year of friction.</li>
+<li><strong>Contracts.</strong> Early exit fees and annual terms may make the move uneconomic until renewal.</li>
+<li><strong>Lock-in.</strong> A single vendor means one set of limits. Check export and API access first.</li>
+<li><strong>A must-have is missing.</strong> If the consolidated option cannot do something you rely on, such as posting to a job board you use, do not move.</li>
+</ol>
+
+<p>Spark Hire's consolidation article lists benefits but does not discuss risks, switching costs or when not to consolidate. A fair evaluation covers both sides.</p>
+
+<h2 id="audit">Run a one-hour stack audit</h2>
+
+<p>List every tool that touches a candidate. For each, fill in: what it does, what it costs per year, who uses it, what data it holds, whether it connects to the ATS, how many handoffs it creates, and whether the contract allows early exit. Then mark each row keep, connect, merge or retire, and add up the handoffs. If more than a few people spend time on manual steps every week, that time is part of the cost.</p>
+
+<h2 id="questions">Six questions before you decide</h2>
+
+<ol>
+<li>Does the new set-up cover every layer you actually use, or just most?</li>
+<li>Which handoffs disappear, and which remain?</li>
+<li>Can you export all your candidate data and decision history?</li>
+<li>What is the all-in cost, including migration, training, GST and the overlapping tools you will keep paying for until contracts end?</li>
+<li>Who owns the move, and what happens to roles already in flight?</li>
+<li>What would make you reverse the decision, and how would you notice?</li>
+</ol>
+
+<div class="note"><p>If you cannot answer question 3, stop. Export terms decide whether the move can be reversed.</p></div>
+
+<h2 id="stages">Move in stages</h2>
+
+<h3>Week 1</h3>
+<p>Pick one open role and set it up in the new system. Keep the old stack running.</p>
+
+<h3>Weeks 2 to 3</h3>
+<p>Run both for that role. Compare time to first response, candidate drop-off between steps, and how easily you can explain a decision from the record.</p>
+
+<h3>Week 4</h3>
+<p>Decide on one more role or stop. Do not move roles already at the offer stage.</p>
+
+<h3>Afterwards</h3>
+<p>Retire overlapping tools at renewal, not before, and keep an export of the old data.</p>
+
+<section class="kfit" id="kestrel" aria-label="Where Kestrel fits">
+<h2>Where Kestrel fits</h2>
+
+<p><a href="https://kestrelorg.com/">Kestrel</a> is an AI-native hiring platform for engineering teams at startups and scale-ups. It puts an applicant tracking system, AI resume screening, MCQ and coding assessments, and AI interviews with scorecards in one system, so screening evidence sits next to the candidate record rather than in separate tools.</p>
+
+<p>It does not replace everything in the table above. Kestrel does not auto-post to job boards, though it gives you tracking links per source, and it does not offer a public API or webhooks today, so it will not suit a team that needs to wire hiring data into other systems. It also does not replace an HR or payroll system. If any of these are must-haves, count them in your audit. You can see how the pipeline works in our <a href="/#how-it-works">how it works</a> section.</p>
+</section>
+
+<h2 id="faq">Frequently asked questions</h2>
+
+<div class="faq">
+<details>
+<summary>How many hiring tools is too many?</summary>
+<p>There is no right number. Pin's survey found 38.8% of teams use four or more day to day, and Metaview describes leading teams as running three or four connected tools. Judge by handoffs and overlap, not count.</p>
+</details>
+<details>
+<summary>Is all-in-one better than best-of-breed?</summary>
+<p>Not always. All-in-one reduces handoffs and copies of data, while best-of-breed can do one job better. The right answer depends on what you hire for and how often.</p>
+</details>
+<details>
+<summary>Will consolidating save money?</summary>
+<p>Possibly, if you retire overlapping tools. Count migration, training and any contracts you must run to term. We have not found independent evidence on savings.</p>
+</details>
+<details>
+<summary>Should a seed-stage startup consolidate?</summary>
+<p>If you hire a few people a year, probably not yet. Keep a simple ATS and a short audit list, and revisit when hiring picks up or handoffs start to hurt.</p>
+</details>
+<details>
+<summary>What about candidate data under DPDP?</summary>
+<p>Every vendor that holds applicant data adds a place to secure and delete it. Map where applicant data lives and take legal advice on notices and retention.</p>
+</details>
+</div>
+
+</article>
+</div>
+
+<section aria-label="Keep reading" style="padding-bottom:80px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:20px">
+<h2 style="margin:0;font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;font-size:32px">Keep reading</h2>
+<a href="/blogs/" style="font-size:14px;font-weight:600;color:#0b7a66">All articles &rarr;</a>
+</div>
+<div>
+<a class="row" href="/blogs/choosing-ats-india/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">06</span>
+<span style="min-width:0"><span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">How to Choose an ATS as a Seed-to-Series A Startup in India</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch">A needs brief, scorecard and two-week trial plan.</span></span>
+<span class="m" style="font-size:14px">Hiring playbook</span>
+<span class="m" style="font-size:14px;color:#4a5551">10 min</span>
+</a>
+<a class="row" href="/blogs/coding-assessment-checklist/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">08</span>
+<span style="min-width:0"><span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">Coding Assessment Platform Checklist: 20 Things to Check Before You Buy</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch">A scored 20-item checklist with a pilot.</span></span>
+<span class="m" style="font-size:14px">Assessments</span>
+<span class="m" style="font-size:14px;color:#4a5551">10 min</span>
+</a>
+<a class="row" href="/blogs/screen-first-engineers/">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:#5b6763">03</span>
+<span style="min-width:0"><span class="rt" style="display:block;font-size:22px;line-height:1.25;font-weight:600;letter-spacing:-0.015em;text-wrap:balance">How to Screen Your First 10 Engineers in India: A Founder's Playbook</span>
+<span style="display:block;margin-top:8px;font-size:15px;line-height:1.55;color:#4a5551;max-width:64ch">A seven step screening process that runs on a spreadsheet.</span></span>
+<span class="m" style="font-size:14px">Hiring playbook</span>
+<span class="m" style="font-size:14px;color:#4a5551">10 min</span>
+</a>
+<div style="border-top:1px solid #e3e8e6"></div>
+</div>
+</section>
+
+</main>
+
+<footer style="background:#f3f6f5;color:#0b1210;border-top:1px solid #e3e8e6">
+<div style="max-width:1280px;margin:0 auto;padding:64px clamp(20px,4vw,48px) 40px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px">
+<div style="flex:1 1 280px;max-width:380px">
+<div style="display:inline-flex;align-items:center;gap:12px;font-size:20px;font-weight:600;letter-spacing:-0.01em">
+<img src="/logo.png" alt="" width="28" height="28" style="display:block;width:28px;height:28px;border-radius:7px">Kestrel</div>
+<p style="margin:16px 0 0;font-size:14px;line-height:1.6;color:#4a5551">Precision hiring OS for seed to Series B. Screen, assess, and interview with AI before a human sees a candidate.</p>
+</div>
+<div class="fl" style="flex:0 1 720px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:32px">
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">PRODUCT</span>
+<a href="/#how-it-works">Workflow</a><a href="/#pricing">Pricing</a><a href="/#who-its-for">Who's it for</a><a href="/#integrations">Integrations</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">COMPANY</span>
+<a href="#">About</a><a href="/blogs/" aria-current="page" style="color:#0b7a66;font-weight:600">Blog</a><a href="#">Careers</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:14px;font-size:15px;color:#33403c">
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.1em;color:#5b6763">LEGAL</span>
+<a href="#">Privacy policy</a><a href="#">Terms of service</a><a href="#">Security</a>
+</div>
+</div>
+</div>
+<div style="margin-top:56px;padding-top:24px;border-top:1px solid #e3e8e6;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#5b6763">
+<span>&copy; 2026 Kestrel. All rights reserved.</span>
+<span style="font-family:'JetBrains Mono',ui-monospace,monospace">support@kestrelorg.com</span>
+</div>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
